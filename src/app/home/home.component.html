@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<style>
+  .dropdown:hover .dropdown-menu {
+    display: block;
+
+  }
+</style>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+  <!-- 
+  <div class="center">
+
+
+    <mat-drawer-container class="example-container" autosize>
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+          <div class="col">
+            <img src="../../assets/images/kindpng_106636.png" alt="logo" style="width:3%;"><br>
+            <a routerLink="" class="m-3">Home</a><br>
+            <a routerLink="" class="m-3">Home</a><br>
+            <a routerLink="" class="m-3">Home</a><br>
+            <a routerLink="" class="m-3">Home</a><br>
+          </div>
+          <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+          <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+          </button>
+        </mat-drawer>
+      
+        <div class="example-sidenav-content one">
+          <img src="../../assets/images/kindpng_106636.png" alt="logo" style="width:3%;">
+          <a routerLink="" class="m-3">Home</a>
+          <a routerLink="" class="m-3">Home</a>
+          <a routerLink="" class="m-3">Home</a>
+          <a routerLink="" class="m-3">Home</a>
+        </div>
+        <div class="example-sidenav-content two">
+           <button type="button" mat-button (click)="drawer.toggle()" style="margin:10px">
+            <i class="bi bi-facebook"></i>
+          </button>
+        </div>
+      </mat-drawer-container>
+  </div>
+ -->
+
+
+
+  <div class="container one">
+    <a class="btn mt-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+      aria-controls="offcanvasExample" style="font-size:200%;">
+      <i class="bi bi-layout-text-sidebar-reverse"></i>
+    </a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <img src="../../assets/images/kindpng_106636.png" alt="" style="width: 15%;">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-block">
+          <a routerLink="" class="d-block m-3 aclr">Home</a>
+          <hr>
+          <a routerLink="" class=" d-block m-3 aclr">About</a>
+          <hr>
+          <a class="d-block m-3 aclr" data-bs-toggle="collapse" href="#collapseExample" role="button"
+            aria-controls="collapseExample">
+            Portfolio
+          </a>
+          <hr>
+          <div class="collapse" id="collapseExample">
+            <div class="cbody">
+              <a routerLink="" class=" d-block m-3 aclr">option1</a>
+              <hr>
+              <a routerLink="" class=" d-block m-3 aclr">option2</a>
+              <hr>
+            </div>
+          </div>
+          <a routerLink="" class="d-block m-3 aclr">Transpotation</a>
+          <hr>
+        </div>
+        <!-- <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="center">
+    <div class="header">
+      <div routerLink="" class="m-3 aclr">Home</div>
+      <div routerLink="" class="m-3 aclr">About</div>
+      <div class="dropdown">
+        <div class="dropdown-toggle aclr" data-bs-toggle="dropdown">Services</div>
+        <div class="dropdown-menu  text-black len" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item position-sticky marm" routerLink="/card">OurService</a>
+          <a class="dropdown-item position-sticky marm" routerLink="/home">Customer Support</a>
+          <a class="dropdown-item position-sticky marm" routerLink="/card">Service</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item marm" routerLink="/home">Extra</a>
+        </div>
+      </div>
+      <div routerLink="" class="m-3 aclr">Transpotation</div>
+      <div class="input-group mb-3" style="width: 25%;margin-left:15%;margin-top:15px;">
+        <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+          aria-describedby="basic-addon2" [(ngModel)]="searchText">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
+        <button type="button" class="btn bg-danger text-white" style="border-radius:20px;margin-left: 20%;">Log
+          In</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="centerr">
+    <div class="card firstpic">
+      <img src="../../assets/images/transpo.jpg" class="img-fluid fluid1" alt="">
+      <div class="card-img-overlay" style="margin-left: 15%;margin-top: 10%;">
+        <div class="card-title h3 text-white anim">REACH YOUR DESTINATION 100%</div>
+        <p class="card-text display-3 text-warning mt-2 anim1"><b> Transport with in 24 hour</b></p>
+        <button type="button" class="btn bg-danger rounded-pill mt-2 text-white">Location</button>&nbsp;&nbsp;
+        <button type="button" class="btn bg-warning rounded-pill mt-2">Call us</button>
+      </div>
+    </div>
+
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="h6 text-danger p-3">ABOUT US</div>
+          <div class="h2 p-3"><b>We make shipping big stuff easy</b></div>
+          <div class="text-muted h5 p-3">Transcargo makes business flow. As one of the world's leading non-asset-based
+            supply chain</div>
+
+          <div class="mt-5">
+            <div class="m-2 d-flex">
+              <i class="bi bi-check-circle-fill text-danger h1 shadow rounded-circle"></i>
+              <div class="h4 m-2">Furniture</div>
+            </div>
+            <div class="m-2 d-flex">
+              <i class="bi bi-check-circle-fill text-danger h1 shadow rounded-circle"></i>
+              <div class="h4 m-2">Appliances</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card-deck">
+            <!-- <img src="../../assets/images/ship.jpg" alt="" class="shakeimg"
+              style="border-radius:50%;border: 10px solid red;padding:10px; width: 50%;height: 50%;"> -->
+            <div class="cardd p-4">
+              <img src="../../assets/images/wheel.jpg" alt="" class="imgrotate"
+                style="width:90%;border-radius:50%;border: 8px solid red;padding:5px;background-color: aliceblue;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="third bg-light pt-3 mt-3 pb-4">
+      <div class="container">
+        <h2 class="text-danger mt-5">WE SPECIALISE IN THE TRANSPORTATION</h2>
+        <div class="display-3">Specialist Logistics Services</div>
+
+        <div class="row text-center mt-4">
+          <div class="col-sm-4">
+            <div class="card over">
+               <img src="../../assets/images/home.jpg" alt="" class="p-5 shakeimg text-center"
+                style="width: 100%;height:310px">
+              <h3 class="text-start p-2"><b>sxdsa</b></h3>
+              <p class="text-start p-3">sacxas</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card  over"><img src="../../assets/images/train.jpg" alt="" class="p-5 shakeimg text-center"
+              style="width: 100%;height:310px">
+              <h3 class="text-start p-2"><b>sxdsa</b></h3>
+              <p class="text-start p-3">sacxas</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card over"><img src="../../assets/images/ship.jpg" alt="" class="p-5 shakeimg text-center"
+              style="width: 100%;height:310px">
+              <h3 class="text-start p-2"><b>Title</b></h3>
+              <p class="text-start p-3">content</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="card">
+      <img src="../../assets/images/2nd.jpg" class="img-fluid fluid2" alt="">
+      <div class="card-img-overlay" style="margin-left: 15%;">
+        <div class="card-title h3 text-white anim">Express Delivery Service</div>
+        <p class="card-text display-3 text-warning mt-2 anim1"><b>Fast Delivery</b></p>
+        <div class="d-flex">
+          <div class="th">
+            <i class="bi bi-telephone-fill display-6 text-white anim1"><b>Call:....01-888-452-1505</b></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="fourth bg-light pt-3 mt-3 pb-5">
+      <div class="container">
+        <h3 class="text-center text-danger">WHAT WE DO</h3>
+        <div class="text-center display-3">Specialist Delivery Services</div>
+
+        <div class="row mt-5 pt-4">
+          <div class="col-sm-4">
+            <div class="card p-4 cover">
+              <h2 class="cls4"><b>Title</b></h2>
+              <p class="text-muted">To be travel management leaders in regions in which we operate.</p>
+              <img src="../../assets/images/courier.jpg" alt="" class="p-5 text-center updown"
+                style="width: 100%;height:300px">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card p-4 cover">
+              <h2 class="cls4"><b>Title</b></h2>
+              <p class="text-muted">To be travel management leaders in regions in which we operate.</p>
+              <img src="../../assets/images/courier.jpg" alt="" class="p-5 text-center" style="width: 100%;height:300px">
+            </div>
+          </div>
+
+
+          <div class="col-sm-4">
+            <div class="card p-4 cover">
+              <h2 class="cls4"><b>Title</b></h2>
+              <p class="text-muted">To be travel management leaders in regions in which we operate.</p>
+              <img src="../../assets/images/courier.jpg" alt="" class="p-5 text-center updown"
+                style="width: 100%;height:300px">
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer pt-5 text-white bg-dark">
+    <div class="con">
+      <div class="col-sm-12">
+        <div class="row p-5">
+          <div class="col-sm-8 col-md-4 col-lg-3 text-center mb-3 p-3">
+            <h2 class="mb-4"><b>Easy Goods</b></h2>
+            <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
+            <button type="button" class="btn bg-info">About Us</button>
+          </div>
+
+          <div class="col-sm-8 col-md-4 col-lg-3  text-center mb-3 p-3">
+            <h2 class="mb-4"><b>Newsletter</b></h2>
+            <p>Subscribe our newsletter to get our latest update & news</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control bg-dark text-muted" placeholder="Your email address"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text bg-info" id="basic-addon2">Subscribe</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8 col-md-4 col-lg-3  text-center mb-3 p-3">
+            <h2 class="mb-4"><b>Official info:</b></h2>
+            <div class="d-flex">
+              <i class="bi bi-geo-alt text-info"></i>
+              <p class="text-white text-start pl-2">Effectuate Tech Solutions,Kuttaiyur,Mettupalayam,Coimbatore</p>
+            </div>
+            <div class="d-flex">
+              <i class="bi bi-telephone-fill text-info"></i>
+              <p class="text-white pl-2">8220891121</p>
+            </div>
+          </div>
+
+          <div class="col-sm-8 col-md-4 col-lg-2  text-center mb-3 p-3">
+            <h2 class="mb-4"><b>Social Media</b></h2>
+            <div class="d-block text-primary bi bi-facebook" href="#">&nbsp;<b> Facebook</b></div>
+            <div class="d-block text-warning bi bi-instagram" href="#">&nbsp;<b> Instagram</b></div>
+            <div class="d-block text-info bi bi-twitter" href="#">&nbsp; <b>Twitter</b></div>
+            <div class="d-block text-danger bi bi-youtube" href="#">&nbsp;<b> Youtube</b></div>
+        </div>
+        </div>
+
+        <div class="text-center">© 2022 Effectuate Tech Solution.All rights reserved.</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+.one{
+  display: none;
+  width: 100%;
+  } 
+
+.center {
+  color: black;
+    width: 100%;
+    } 
+  
+
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aclr{
+    color: rgb(100, 100, 100);
+  }
+
+
+  .marm:hover {
+    width: 200px;
+    margin-left: 10px;
+    background-color: white;
+  }
+
+
+
+  .anim{
+    margin-top: 100px;
+    animation-name: asky;
+    animation-duration: 5s;
+  }
+
+  .anim1{
+    margin-top: 100px;
+    animation-name: asky1;
+    animation-duration: 5s;
+  }
+
+
+  .over:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+  }
+
+
+
+
+  .fluid1 {
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+    width:auto;
+    height:700px;
+  }
+
+
+  .fluid2 {
+    width:auto;
+    height:700px;
+  }
+
+  .firstpic {
+    background-image: linear-gradient(to right, rgb(244, 0, 0) , rgb(0, 255, 251));
+
+  }
+  
+  @keyframes asky {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+  
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+  }
+
+  @keyframes asky1 {
+    0% {
+        opacity: 0;
+        transform: translatex(-500px);
+    }
+  
+    80% {
+        transform: translatex(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+  }
+
+
+
+
+
+  .shakeimg:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    25% { transform: translate(-1px, -2px) rotate(-1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    75% { transform: translate(-1px, -1px) rotate(1deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+
+  @media (max-width:999px) {
+    .one {
+      display: flex;
+      justify-content: end;
+      align-items: flex-end;
+    }
+    .header {
+      display: none;
+    }
+    .fluid1 {
+      width:100%;
+      height:500px;
+    }
+    .fluid2 {
+      width:100%;
+      height:500px;
+    }
+  }
+
+
+
+
+
+  .imgrotate{
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+
+
+@keyframes rotate{
+  from{ transform: rotate(-360deg); }
+  to{ transform: rotate(360deg); }
+}
+
+
+
+.updown {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+.updown {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+
+
+.cover:hover {
+  color: black;
+  background-color: rgb(181, 255, 20);
+}
